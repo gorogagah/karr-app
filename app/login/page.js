@@ -17,7 +17,7 @@ export default function Login(){
     return (
         <div className="flex flex-col items-center justify-center px-6 mx-auto md:h-screen pt:mt-0">
             <Link href="/" className="flex items-center justify-center mb-8 text-2xl font-semibold lg:mb-10 dark:text-white">
-                <Image src="/logo.svg" className="mr-4" width={118} height={44} alt="KARR Logo"/>
+                <Image src="/logo.svg" className="h-11 w-auto mr-4" width={118} height={44} alt="KARR Logo"/>
             </Link>
             <form action={login} className={"w-full max-w-xl p-6 space-y-8 sm:p-8 bg-white rounded-lg shadow dark:bg-gray-800"}>
                 <h2 className={"text-2xl font-bold text-gray-900 dark:text-white"}>Sign in to continue</h2>
