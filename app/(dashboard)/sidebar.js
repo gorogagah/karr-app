@@ -41,23 +41,10 @@ export default function Sidebar(){
                                 </Link>
                             </li>
                             <li>
-                                <Disclosure>
-                                    <DisclosureButton className="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700">
-                                        <CubeIcon className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" />
-                                        <span className="flex-1 ml-3 text-left whitespace-nowrap">Produk</span>
-                                        <ChevronDownIcon className="size-6 group-data-[open]:rotate-180"/>
-                                    </DisclosureButton>
-                                    <DisclosurePanel>
-                                        <ul className="py-2 space-y-2">
-                                            <li>
-                                                <span className="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700">Opsi 1</span>
-                                            </li>
-                                            <li>
-                                                <span className="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700">Opsi 2</span>
-                                            </li>
-                                        </ul>
-                                    </DisclosurePanel>
-                                </Disclosure>
+                                <Link href="/produk" className="flex items-center p-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700">
+                                    <CubeIcon className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" />
+                                    <span className="flex-1 ml-3 text-left whitespace-nowrap">Produk</span>
+                                </Link>
                             </li>
                             <li>
                                 <Disclosure>
