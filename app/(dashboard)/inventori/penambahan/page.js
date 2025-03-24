@@ -4,7 +4,7 @@ import { Button, Field, Fieldset, Input, Label, Legend } from "@headlessui/react
 import { ChevronLeftIcon, ChevronRightIcon, PencilSquareIcon, TrashIcon } from "@heroicons/react/16/solid";
 import { HomeIcon, MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
-import DateRange from "./dateRange";
+import DateRange from "../../../components/dateRange";
 import { useState } from "react";
 import cx from "@/app/utils/cx";
 import { ExclamationCircleIcon, XMarkIcon } from "@heroicons/react/24/outline";
