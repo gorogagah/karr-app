@@ -1,49 +1,28 @@
 "use client"
 
-import { Line } from "react-chartjs-2";
-import { Chart as ChartJS, LineElement, PointElement, CategoryScale, LinearScale, Tooltip } from 'chart.js';
+import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import CustomTooltip from "../utils/customTooltip";
 
-const options = {
-    scales: {
-        x: {
-            grid: {
-                drawBorder: false,
-                display: false,
-            },
-        },
-        y: {
-            grid: {
-                color: "rgb(55, 65, 81)",
-            }
-        },
-    },
-};
+const data = [
+    { name: '16 Mar', Penjualan: 63560 },
+    { name: '17 Mar', Penjualan: 62180 },
+    { name: '18 Mar', Penjualan: 61560 },
+    { name: '19 Mar', Penjualan: 65260 },
+    { name: '20 Mar', Penjualan: 63560 },
+    { name: '21 Mar', Penjualan: 62560 },
+    { name: '22 Mar', Penjualan: 66160 },
+];
 
-const labels = ['16 Mar', '17 Mar', '18 Mar', '19 Mar', '20 Mar', '21 Mar', '22 Mar'];
-
-const data = {
-    labels,
-    datasets: [{
-        data: [63560, 62180, 61560, 65260, 63560, 62560, 66160],
-    }],
-};
-
-ChartJS.register(LineElement, PointElement, CategoryScale, LinearScale, Tooltip);
-ChartJS.defaults.color = "rgb(156, 163, 175)";
-ChartJS.defaults.font.size = "14px";
-ChartJS.defaults.elements.point.radius = 4;
-ChartJS.defaults.elements.point.backgroundColor = "#0ea5e9";
-ChartJS.defaults.elements.point.borderWidth = 2;
-ChartJS.defaults.elements.point.borderColor = "#fff";
-ChartJS.defaults.elements.point.hoverRadius = 8;
-ChartJS.defaults.elements.point.hoverBorderWidth = 2;
-ChartJS.defaults.elements.line.tension = 0.25;
-ChartJS.defaults.elements.line.borderColor = "#0ea5e9";
-
-export default function Chart(){
+export default function Chart() {
     return (
-        <div className="min-h-[435px]">
-            <Line options={options} data={data} />
-        </div>
+        <ResponsiveContainer height={435}>
+            <LineChart data={data} margin={{ top: 0, right: 24, left: 24, bottom: 24 }}>
+                <Line type="monotone" dataKey="Penjualan" dot={{ fill: "#0ea5e9", stroke: "#fff", strokeWidth: 2, r: 5 }} activeDot={{ fill: "#0ea5e9", stroke: "#fff", strokeWidth: 2, r: 7 }} stroke="#0ea5e9" strokeWidth={3} />
+                <CartesianGrid vertical={false} stroke="#ccc" />
+                <XAxis dataKey="name" />
+                <YAxis domain={['auto', 'auto']} axisLine={false} tickLine={false} />
+                <Tooltip content={<CustomTooltip />} />
+            </LineChart>
+        </ResponsiveContainer>
     );
 }

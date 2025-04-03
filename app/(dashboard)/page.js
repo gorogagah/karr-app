@@ -5,7 +5,7 @@ import Link from "next/link";
 import Chart from "./chart";
 import DateRange from "../components/dateRange";
 
-export default function Home(){
+export default function Home() {
     return (
         <div className="px-4 pt-6">
             <div className="grid gap-4 xl:grid-cols-2 2xl:grid-cols-3">
@@ -18,10 +18,10 @@ export default function Home(){
                         </div>
                         <div className="flex items-center justify-end flex-1 text-base font-medium text-green-500 dark:text-green-400">
                             12.5%
-                            <ArrowLongUpIcon className="w-5 h-5"/>
+                            <ArrowLongUpIcon className="w-5 h-5" />
                         </div>
                     </div>
-                    <Chart/>
+                    <Chart />
                     <div className="flex items-center justify-between pt-3 mt-4 border-t border-gray-200 sm:pt-6 dark:border-gray-700">
                         <Popover>
                             <PopoverButton className="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 rounded-lg hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
@@ -56,7 +56,7 @@ export default function Home(){
                         <div className="flex-shrink-0">
                             <Link href="#" className="inline-flex items-center p-2 text-xs font-medium uppercase rounded-lg text-sky-700 sm:text-sm hover:bg-gray-100 dark:text-sky-500 dark:hover:bg-gray-700">
                                 Laporan Penjualan
-                                <ChevronRightIcon className="w-4 h-4 ml-1 stroke-2"/>
+                                <ChevronRightIcon className="w-4 h-4 ml-1 stroke-2" />
                             </Link>
                         </div>
                     </div>
@@ -73,8 +73,8 @@ export default function Home(){
                                             <div>
                                                 <p className="font-medium text-gray-900 truncate dark:text-white">Apron</p>
                                                 <div className="flex items-center justify-end flex-1 text-sm text-green-500 dark:text-green-400">
-                                                    <ArrowUpIcon className="w-4 h-4"/>
-                                                    2.5% 
+                                                    <ArrowUpIcon className="w-4 h-4" />
+                                                    2.5%
                                                     <span className="ml-2 text-gray-500">vs bulan lalu</span>
                                                 </div>
                                             </div>
@@ -90,8 +90,8 @@ export default function Home(){
                                             <div>
                                                 <p className="font-medium text-gray-900 truncate dark:text-white">Pot</p>
                                                 <div className="flex items-center justify-end flex-1 text-sm text-red-600 dark:text-red-500">
-                                                    <ArrowDownIcon className="w-4 h-4"/>
-                                                    1.35% 
+                                                    <ArrowDownIcon className="w-4 h-4" />
+                                                    1.35%
                                                     <span className="ml-2 text-gray-500">vs bulan lalu</span>
                                                 </div>
                                             </div>
@@ -100,7 +100,7 @@ export default function Home(){
                                             Rp. 201.869
                                         </div>
                                     </div>
-                                </li>     
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -138,7 +138,7 @@ export default function Home(){
                         <div className="flex-shrink-0">
                             <Link href="#" className="inline-flex items-center p-2 text-xs font-medium uppercase rounded-lg text-sky-700 sm:text-sm hover:bg-gray-100 dark:text-sky-500 dark:hover:bg-gray-700">
                                 Laporan Lengkap
-                                <ChevronRightIcon className="w-4 h-4 ml-1 stroke-2"/>
+                                <ChevronRightIcon className="w-4 h-4 ml-1 stroke-2" />
                             </Link>
                         </div>
                     </div>
@@ -151,7 +151,7 @@ export default function Home(){
                         <span className="text-2xl font-bold leading-none text-gray-900 sm:text-3xl dark:text-white">2,340</span>
                         <p className="flex items-center text-base font-normal text-gray-500 dark:text-gray-400">
                             <span className="flex items-center mr-1.5 text-sm text-green-500 dark:text-green-400">
-                                <ArrowUpIcon className="w-4 h-4"/> 12.5% 
+                                <ArrowUpIcon className="w-4 h-4" /> 12.5%
                             </span>
                             vs bulan lalu
                         </p>
@@ -163,8 +163,8 @@ export default function Home(){
                         <span className="text-2xl font-bold leading-none text-gray-900 sm:text-3xl dark:text-white">Rp. 23.400</span>
                         <p className="flex items-center text-base font-normal text-gray-500 dark:text-gray-400">
                             <span className="flex items-center mr-1.5 text-sm text-green-500 dark:text-green-400">
-                                <ArrowUpIcon className="w-4 h-4"/>
-                                3,4% 
+                                <ArrowUpIcon className="w-4 h-4" />
+                                3,4%
                             </span>
                             vs bulan lalu
                         </p>
@@ -176,8 +176,8 @@ export default function Home(){
                         <span className="text-2xl font-bold leading-none text-gray-900 sm:text-3xl dark:text-white">Rp. 23.400</span>
                         <p className="flex items-center text-base font-normal text-gray-500 dark:text-gray-400">
                             <span className="flex items-center mr-1.5 text-sm text-red-600 dark:text-red-500">
-                                <ArrowUpIcon className="w-4 h-4"/>
-                                3,4% 
+                                <ArrowUpIcon className="w-4 h-4" />
+                                3,4%
                             </span>
                             vs bulan lalu
                         </p>
@@ -191,7 +191,7 @@ export default function Home(){
                         <span className="text-base font-normal text-gray-500 dark:text-gray-400">Daftar transaksi terbaru</span>
                     </div>
                     <div className="items-center sm:flex">
-                        <DateRange/>
+                        <DateRange />
                     </div>
                 </div>
                 <div className="flex flex-col mt-6">
@@ -284,7 +284,7 @@ export default function Home(){
                     <div className="flex-shrink-0">
                         <Link href="#" className="inline-flex items-center p-2 text-xs font-medium uppercase rounded-lg text-sky-700 sm:text-sm hover:bg-gray-100 dark:text-sky-500 dark:hover:bg-gray-700">
                             Laporan Transaksi
-                            <ChevronRightIcon className="w-4 h-4 ml-1 stroke-2"/>
+                            <ChevronRightIcon className="w-4 h-4 ml-1 stroke-2" />
                         </Link>
                     </div>
                 </div>
