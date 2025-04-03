@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { useGlobalContext } from './globalProvider';
 import cx from '../utils/cx';
 
-export default function Sidebar(){
+export default function Sidebar() {
     const { isSidebarOpen, setIsSidebarOpen } = useGlobalContext();
 
     return (
@@ -20,7 +20,7 @@ export default function Sidebar(){
                                 <Disclosure>
                                     <DisclosureButton className="flex sm:hidden items-center w-full font-semibold p-2 text-base text-gray-500 transition duration-75 rounded-lg group hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-700">
                                         <span className="flex-1 text-left whitespace-nowrap">Sarsa</span>
-                                        <ChevronDownIcon className="size-6 group-data-[open]:rotate-180"/>
+                                        <ChevronDownIcon className="size-6 group-data-[open]:rotate-180" />
                                     </DisclosureButton>
                                     <DisclosurePanel>
                                         <ul className="py-2 space-y-2">
@@ -36,7 +36,7 @@ export default function Sidebar(){
                             </li>
                             <li>
                                 <Link href="/" className="flex items-center p-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700">
-                                    <ChartPieIcon className="w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"/>
+                                    <ChartPieIcon className="w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" />
                                     <span className="ml-3">Dasbor</span>
                                 </Link>
                             </li>
@@ -49,9 +49,9 @@ export default function Sidebar(){
                             <li>
                                 <Disclosure>
                                     <DisclosureButton className="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700">
-                                        <ClipboardDocumentListIcon className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"/>
+                                        <ClipboardDocumentListIcon className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" />
                                         <span className="flex-1 ml-3 text-left whitespace-nowrap">Inventori</span>
-                                        <ChevronDownIcon className="size-6 group-data-[open]:rotate-180"/>
+                                        <ChevronDownIcon className="size-6 group-data-[open]:rotate-180" />
                                     </DisclosureButton>
                                     <DisclosurePanel>
                                         <ul className="py-2 space-y-2">
@@ -68,9 +68,9 @@ export default function Sidebar(){
                             <li>
                                 <Disclosure>
                                     <DisclosureButton className="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700">
-                                        <DocumentChartBarIcon className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"/>
-                                        <span className="flex-1 ml-3 text-left whitespace-nowrap">Laporan</span>
-                                        <ChevronDownIcon className="size-6 group-data-[open]:rotate-180"/>
+                                        <ChartBarIcon className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" />
+                                        <span className="flex-1 ml-3 text-left whitespace-nowrap" sidebar-toggle-item="">Analisa</span>
+                                        <ChevronDownIcon className="size-6 group-data-[open]:rotate-180" />
                                     </DisclosureButton>
                                     <DisclosurePanel>
                                         <ul className="py-2 space-y-2">
@@ -85,32 +85,19 @@ export default function Sidebar(){
                                 </Disclosure>
                             </li>
                             <li>
-                                <Disclosure>
-                                    <DisclosureButton className="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700">
-                                        <ChartBarIcon className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"/>
-                                        <span className="flex-1 ml-3 text-left whitespace-nowrap" sidebar-toggle-item="">Analisa</span>
-                                        <ChevronDownIcon className="size-6 group-data-[open]:rotate-180"/>
-                                    </DisclosureButton>
-                                    <DisclosurePanel>
-                                        <ul className="py-2 space-y-2">
-                                            <li>
-                                                <span className="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700">Opsi 1</span>
-                                            </li>
-                                            <li>
-                                                <span className="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700">Opsi 2</span>
-                                            </li>
-                                        </ul>
-                                    </DisclosurePanel>
-                                </Disclosure>
+                                <Link href="/laporan" className="flex items-center p-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700">
+                                    <DocumentChartBarIcon className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" />
+                                    <span className="flex-1 ml-3 text-left whitespace-nowrap">Laporan Keuangan</span>
+                                </Link>
                             </li>
                         </ul>
                         <div className="pt-2 space-y-2">
                             <Link href="/settings" className="flex items-center p-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700 ">
-                                <Cog8ToothIcon className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"/>
+                                <Cog8ToothIcon className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" />
                                 <span className="ml-3" sidebar-toggle-item="">Pengaturan</span>
                             </Link>
                             <Link href="/issues" target="_blank" className="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700">
-                                <InformationCircleIcon className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"/>
+                                <InformationCircleIcon className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" />
                                 <span className="ml-3" sidebar-toggle-item="">Bantuan</span>
                             </Link>
                         </div>
