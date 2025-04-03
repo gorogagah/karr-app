@@ -1,7 +1,7 @@
 export default function CustomTooltip({ payload, label, active }) {
     if (active) {
-        const listItems = payload.map((data) =>
-            <div className="flex items-center px-3 pb-3">
+        const listItems = payload.map((data, index) =>
+            <div key={index} className="flex items-center px-3 pb-3">
                 <span className="size-3 rounded-full mr-2" style={{ "background-color": data.color }}></span>
                 <span>{data.name}: </span>
                 <span className="font-semibold text-gray-900 ml-2">Rp {data.value}</span>
