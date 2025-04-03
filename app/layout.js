@@ -16,7 +16,7 @@ export const metadata = {
     template: "%s - Karr",
     default: "Karr",
   },
-  description: "Inventory and POS app",
+  description: "KARR is an Inventory Management and Point of Sale (POS) system designed for small to medium-sized businesses",
 };
 
 export default function RootLayout({ children }) {
