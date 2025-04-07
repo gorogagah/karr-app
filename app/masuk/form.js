@@ -25,7 +25,7 @@ export default function Form() {
         <form action={formAction} className={"w-full max-w-xl p-6 space-y-8 sm:p-8 bg-white rounded-lg shadow dark:bg-gray-800"}>
             <h2 className={"text-2xl font-bold text-gray-900 dark:text-white"}>Sign in to continue</h2>
             {state?.message && <div className="flex items-center bg-red-100 text-red-900 text-sm rounded-lg p-2.5">
-                <XCircleIcon className="text-red-500 h-4 mr-2.5" />
+                <XCircleIcon className="text-red-500 size-7 mr-2.5 md:size-4" />
                 {state?.message}
             </div>}
             <Field>
